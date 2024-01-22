@@ -44,7 +44,7 @@ public class Product implements Serializable {
 	
 	
 	@OneToMany(mappedBy = "id.product")
-	// id do OrderItem e order do OrderItemPK
+	// id do OrderItem e product do OrderItemPK
 	private Set<OrderItem> items = new HashSet<>();
 	
 	public Product() {
