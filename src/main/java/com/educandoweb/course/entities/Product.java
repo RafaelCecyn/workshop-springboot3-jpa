@@ -34,10 +34,10 @@ public class Product implements Serializable {
 	joinColumns = @JoinColumn(name = "product_id"),
 	inverseJoinColumns = @JoinColumn(name = "category_id")
 	) 
-	// name = "tb_product_category" -> Nome da tabela
+	// name = "tb_product_category" -> Nome da nova tabela criada
 	// joinColumns = @JoinColumn(name = "product_id") -> Chave estrangeira do produto
 	// inverseJoinColumns = @JoinColumn(name = "category_id") -> Chave estrangeira da categoria
-	private Set<Category> categories = new HashSet<>(); // categories vai mapear na classe Category
+	private Set<Category> categories = new HashSet<>(); // categories vai mapear na classe Categoria
 	
 	public Product() {
 	}
