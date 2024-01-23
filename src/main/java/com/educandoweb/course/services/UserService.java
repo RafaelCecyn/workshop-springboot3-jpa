@@ -28,5 +28,21 @@ public class UserService {
 	public User insert(User obj) { // Retorna o objeto salvo
 		return repository.save(obj); // método save já salva o objeto no Banco de dados
 	}
+	
+	public void delete(Long id) {
+		repository.deleteById(id);
+	}
+	
+	public User update(Long id, User obj) {
+		User entity = repository.getReferenceById(id); // Deixa o objeto mapeado pelo banco de dados
+		updateData(entity,obj);
+		return repository.save(entity);
+	}
+
+	private void updateData(User entity, User obj) {
+		entity.setName(obj.getName());
+		entity.setEmail(obj.getEmail());
+		entity.setPhone(obj.getPhone());
+	}
 
 }
