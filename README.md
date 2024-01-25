@@ -3,6 +3,9 @@
 
 # Sobre o projeto
 
+## Modelo de domínio
+![Modelo Conceitual](https://github.com/RafaelCecyn/workshop-springboot3-jpa/blob/main/assets/Screenshot%20from%202024-01-24%2021-04-27.png)
+
 
 # Tecnologias utilizadas
 ## Back end
