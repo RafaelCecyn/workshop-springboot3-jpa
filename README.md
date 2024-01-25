@@ -29,6 +29,7 @@ cd src/com.educandoweb.course
 
 # executar o projeto
 run  no arquivo CourseApplication.java
+```
 
 # Autor
 
